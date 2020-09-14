@@ -9,6 +9,7 @@
     float: left;
     letter-spacing: .2rem;
     margin-top: .3rem;
+    margin-right: auto;
 }
 
 .container-fluid {
@@ -82,14 +83,10 @@
 
 /* --------- Game --------- */
 
-.row {
-    text-align: center;
-}
-
 .card {
     display: inline-block;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     background-color: #eee;
     cursor: pointer;
 }
@@ -138,10 +135,20 @@
 
 .game {
     margin-top: 4rem;
+    position: center;
 }
 
 /* --------- footer --------- */
 
 .footer {
-    margin: auto;
+    margin-top: 3rem;
+    background-color: #e4c1f9;
+}
+
+.footer a {
+    color: #eee;
+}
+
+.footer li {
+    padding-right: 2rem;
 }
