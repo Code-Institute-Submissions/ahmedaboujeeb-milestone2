@@ -34,7 +34,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <ul class="navbar-nav ml-auto mt-2 mt-lg-0 menu">
-                                <li class="nav-item mr-2"><a class="nav-link highlight" href="#">About</a></li>
+                                <li class="nav-item mr-2"><a class="nav-link highlight" href="#about">About</a></li>
                                 <li class="nav-item mr-2"><a class="nav-link" href="#">Play</a></li>
                                 <li class="nav-item mr-2"><a class="nav-link" href="#">Top Players</a></li>
                             </ul>
@@ -59,10 +59,11 @@
     <!-- /Hero image -->
 
     <!-- About  -->
-    <div class="container-fluid about">
+    <section>
+    <div class="container about">
         <div class="row">
             <div class="col-md-12">
-                <h2>About</h2>
+              <h2> <a id="about"></a>About</h2>
                 <p>
                     Concentration, also known as Match Match, Match Up, Memory, Pelmanism, Shinkei-suijaku,
                     Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and
@@ -95,36 +96,63 @@
             </div>
         </div>
     </div>
-
-
-
-
+</section>
     <!-- /About  -->
 
     <!-- Play  -->
+    <section>
+        <div class="container-fluid">
+            
+        <div class="row">
+            <div class="col-sm-12">
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div  class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+        </div>
+    </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+        </div>
+    </div>
+    
+        <div class="row">
+            <div class="col-md-12">
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+        </div>
+    </div>
+</div>
 
-
-
-
+    </section>
     <!-- /Play  -->
 
     <!-- Top Players  -->
+    <section>
 
-
-
-
+    </section>
     <!-- /Top Players  -->
 
     <!-- Footer  -->
-
-
-
-
-
-    <!-- /Footer  -->
     <div class="container-fluid footer">
         <div class="row">
-    <div class="col-sm-4 footer">
+    <div class="col-md-4 footer">
         <ul class="list-inline social-icons">
             <li class="list-inline-item">
                 <a target="_blank" href="#">
@@ -154,7 +182,9 @@
     </div>
 </div>
 </div>
+<!-- /Footer  -->
 
+<script src="assets/js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
