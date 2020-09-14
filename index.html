@@ -58,6 +58,40 @@
     </section>
     <!-- /Hero image -->
 
+    <!-- Play  -->
+    <section>
+        <div class="container game">
+            <h2> <a id="letsplay"></a>Let's Play!</h2>
+            <div class="row center">
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            </div>
+            <div class="row center">
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            </div>
+            <div class="row">
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+
+            </div>
+            <div class="row">
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- /Play  -->
+
     <!-- About  -->
     <section>
         <div class="container about">
@@ -103,49 +137,21 @@
     </section>
     <!-- /About  -->
 
-    <!-- Play  -->
-    <section>
-        <div class="container game">
-            <h2> <a id="letsplay"></a>Let's Play!</h2>
-            <div class="row">
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-            </div>
-            <div class="row">
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-            </div>
-            <div class="row">
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-
-            </div>
-            <div class="row">
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-            </div>
-        </div>
-
-    </section>
-    <!-- /Play  -->
-
     <!-- Top Players  -->
     <section>
+        <div class="container players">
+        <div class="col-md-12">
+            <h2>Find Top Players</h2>
+        <div id="map"></div>
+    </div>
+    </div>
 
     </section>
     <!-- /Top Players  -->
 
     <!-- Footer  -->
     <div class="container-fluid footer">
-        <div class="row">
+        <div class="row center">
             <div class="col-md-12">
                 <ul class="list-inline social-icons">
                     <li class="list-inline-item">
@@ -179,6 +185,7 @@
     <!-- /Footer  -->
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/maps.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -188,6 +195,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    </script>
+    <script src="https://unpkg.com/@google/markerclustererplus@5.1.0/dist/markerclustererplus.min.js"></script>
+    </script>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV77-YUyeEFQsKdNQ9JUWSHSwXD7MlFH8&callback=initMap">
+    </script>
 
 
 </body>
