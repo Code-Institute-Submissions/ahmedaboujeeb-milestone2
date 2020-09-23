@@ -2,6 +2,8 @@ let clickedCard = null;
 let preventClick = false;
 let combosFound = 0;
 
+
+
 const colors = [
     "pink",
     "red",
@@ -13,8 +15,9 @@ const colors = [
     "blue"
 ];
 
-const cards = [...document.querySelectorAll(".card")];
-for (let color of colors) {
+function initCards(cards) {
+
+    for (let color of colors) {
     const cardAIndex = parseInt(Math.random() * cards.length);
     const cardA = cards[cardAIndex];
     cards.splice(cardAIndex, 1);
@@ -27,6 +30,9 @@ for (let color of colors) {
     cardB.className += ` ${color}`;
     cardB.setAttribute("data-color", color);
 }
+}
+
+initCards([...document.querySelectorAll(".card")]);
 
 function onCardClicked(e) {
     const target = e.currentTarget;
@@ -47,7 +53,7 @@ function onCardClicked(e) {
     if (!clickedCard) {
         // if we haven't clicked a card, keep track of the card, display it's color
         clickedCard = target;
-    } else if (clickedCard) {
+    } else {
         // if we have already clicked a card, check if the new card matches the old card color
         if (clickedCard.getAttribute("data-color") !== 
         target.getAttribute("data-color")
@@ -66,9 +72,20 @@ function onCardClicked(e) {
             combosFound++;
         clickedCard = null;
         if (combosFound === 8) {
-            alert("YOU WIN!!");
+            document.getElementById("winner").innerText= "You Win!";
+            reset();
         }
         
         }
     }
 }
+
+
+function reset() {
+    var cards = document.querySelectorAll(".card");
+    cards.forEach(function(item, index) {
+    item.className = "card color-hidden"
+    })
+
+    initCards([...document.querySelectorAll(".card")]);
+};

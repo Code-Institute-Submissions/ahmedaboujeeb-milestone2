@@ -59,16 +59,16 @@
     <!-- /Hero image -->
 
     <!-- Play  -->
-    <section>
-        <div class="container game">
-            <h2> <a id="letsplay"></a>Let's Play!</h2>
+    <section class="game">
+        <div class="container">
+            <h2 class="heading"> <a id="letsplay"></a>Let's Play!</h2>
             <div class="row center">
                 <div class="card color-hidden" onclick="onCardClicked(event)"></div>
                 <div class="card color-hidden" onclick="onCardClicked(event)"></div>
                 <div class="card color-hidden" onclick="onCardClicked(event)"></div>
                 <div class="card color-hidden" onclick="onCardClicked(event)"></div>
             </div>
-            <div class="row center">
+            <div class="row">
                 <div class="card color-hidden" onclick="onCardClicked(event)"></div>
                 <div class="card color-hidden" onclick="onCardClicked(event)"></div>
                 <div class="card color-hidden" onclick="onCardClicked(event)"></div>
@@ -88,16 +88,22 @@
                 <div class="card color-hidden" onclick="onCardClicked(event)"></div>
             </div>
         </div>
+        <div class="col-md-6 center">
+            <p id="winner"></p>
+            <button onclick="reset()">Reset</button>
+            
+        </div>
 
     </section>
     <!-- /Play  -->
 
     <!-- About  -->
-    <section>
-        <div class="container about">
+    <section class="about">
+        <div class="container">
+            <h2 class="heading"> <a id="about"></a>About</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <h2> <a id="about"></a>About</h2>
+                    <h3>About The Game</h3>
                     <p>
                         Concentration, also known as Match Match, Match Up, Memory, Pelmanism, Shinkei-suijaku,
                         Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface
@@ -109,7 +115,7 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <h2>Rules</h2>
+                    <h3>Rules</h2>
                     <p>
                         Any deck of playing cards may be used, although there are also commercial sets of cards with
                         images.
@@ -138,14 +144,16 @@
     <!-- /About  -->
 
     <!-- Top Players  -->
-    <section>
-        <div class="container players">
-            <h2> <a id="topplayers"></a>Find Top Players</h2>
+    <section class="players">
+        <div class="container">
+            <h2 class="heading"> <a id="topplayers"></a>Find Top Players</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p>A. Player A</p>
-                    <p>B. Player B</p>
-                    <p>C. Player C</p>
+                    <ol type="A">
+                        <li>Player Mike</li>
+                        <li>Player Susan</li>
+                        <li>Player Tom</li>
+                    </ol>
                 </div>
                 <div class="col-md-6">
                     <div id="map"></div>

@@ -1,13 +1,13 @@
 
 /* ----- Header ----- */
 .logo {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3rem;
-    color: #ff99c8;
+    color: #9381ff;
     text-decoration: none;
     width: 100%;
     float: left;
-    letter-spacing: .2rem;
+    letter-spacing: .5rem;
     margin-top: .3rem;
     margin-right: auto;
 }
@@ -23,19 +23,19 @@
 }
 
 .navbar-light .navbar-nav .nav-link { 
-    color: #e4c1f9;
-    font-weight: 500;
+    color: #9381ff;
+    font-weight: 600;
     font-size: 1.2rem;
     padding-right: 0;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #a9def9;
+    color: #b8b8ff;
     font-weight: 600;
 }
 
 .navlink .highlight a {
-    color: #e4c1f9;
+    color: #b8b8ff;
     font-weight: 600;
 }
 
@@ -53,7 +53,7 @@
     background: url("../images/hero-image.jpg") no-repeat;
     position: relative;
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     left: 0;
     top: 0;
@@ -73,9 +73,6 @@
     overflow: hidden;
     position: relative;
 }
-
-/* --------- About --------- */
-
 
 /* --------- Game --------- */
 
@@ -130,9 +127,21 @@
 }
 
 .game {
-    margin: 10rem auto;
+    padding: 10rem 0;
     width: 100%;
 }
+
+.gamep {
+    padding-top: 3rem;
+}
+
+/* --------- About --------- */
+
+.about {
+    background-color: #e7ecef;
+    padding: 3rem 0;
+}
+
 
 /* --------- Top Players --------- */
 
@@ -142,15 +151,15 @@
 }
 
 .players {
-    margin-top: 10rem;
+    padding: 3rem 0;
 }
-
 
 /* --------- footer --------- */
 
 .footer {
     margin-top: 3rem;
-    background-color: #e4c1f9;
+    background-color: #b8b8ff;
+    padding: 1rem;
 }
 
 .footer a {
@@ -164,3 +173,22 @@
 .center {
     text-align: center;
 }
+
+.footer li i:hover {
+    color: #3772ff;
+}
+
+/* --------- General --------- */
+
+body {
+    background-color: #f8f7ff;
+}
+
+.heading {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 4rem;
+    font-weight: 600;
+    color: #3772ff;
+}
+
