@@ -186,7 +186,7 @@ body {
 
 .heading {
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     padding-bottom: 4rem;
     font-weight: 600;
     color: #3772ff;

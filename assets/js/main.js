@@ -73,9 +73,8 @@ function onCardClicked(e) {
         clickedCard = null;
         if (combosFound === 8) {
             document.getElementById("winner").innerText= "You Win!";
-            reset();
+            setTimeout (reset, 3000);
         }
-        
         }
     }
 }
@@ -85,6 +84,7 @@ function reset() {
     var cards = document.querySelectorAll(".card");
     cards.forEach(function(item, index) {
     item.className = "card color-hidden"
+    document.getElementById("winner").innerText= "";
     })
 
     initCards([...document.querySelectorAll(".card")]);
