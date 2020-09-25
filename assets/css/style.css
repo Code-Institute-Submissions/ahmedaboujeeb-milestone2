@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Architects Daughter", cursive, sans-serif;
+}
 
 /* ----- Header ----- */
 .logo {
     font-weight: 700;
     font-size: 3rem;
-    color: #9381ff;
+    color: #133c55;
     text-decoration: none;
     width: 100%;
     float: left;
@@ -23,19 +28,19 @@
 }
 
 .navbar-light .navbar-nav .nav-link { 
-    color: #9381ff;
+    color: #386fa4;
     font-weight: 600;
     font-size: 1.2rem;
     padding-right: 0;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #b8b8ff;
+    color: #59a5d8;
     font-weight: 600;
 }
 
 .navlink .highlight a {
-    color: #b8b8ff;
+    color: #59a5d8;
     font-weight: 600;
 }
 
@@ -142,6 +147,10 @@
     padding: 3rem 0;
 }
 
+.about h3 {
+    color: #386fa4;
+}
+
 
 /* --------- Top Players --------- */
 
@@ -158,7 +167,7 @@
 
 .footer {
     margin-top: 3rem;
-    background-color: #b8b8ff;
+    background-color: #59a5d8;
     padding: 1rem;
 }
 
@@ -175,7 +184,7 @@
 }
 
 .footer li i:hover {
-    color: #3772ff;
+    color: #133c55;
 }
 
 /* --------- General --------- */
@@ -189,6 +198,6 @@ body {
     text-align: left;
     padding-bottom: 4rem;
     font-weight: 600;
-    color: #3772ff;
+    color: #133c55;
 }
 
