@@ -3,6 +3,7 @@ let preventClick = false;
 let combosFound = 0;
 
 
+let countDownTimerEnabled = false;
 
 const colors = [
     "pink",
@@ -18,18 +19,18 @@ const colors = [
 function initCards(cards) {
 
     for (let color of colors) {
-    const cardAIndex = parseInt(Math.random() * cards.length);
-    const cardA = cards[cardAIndex];
-    cards.splice(cardAIndex, 1);
-    cardA.className += ` ${color}`;
-    cardA.setAttribute("data-color", color);
+        const cardAIndex = parseInt(Math.random() * cards.length);
+        const cardA = cards[cardAIndex];
+        cards.splice(cardAIndex, 1);
+        cardA.className += ` ${color}`;
+        cardA.setAttribute("data-color", color);
 
-    const cardBIndex = parseInt(Math.random() * cards.length);
-    const cardB = cards[cardBIndex];
-    cards.splice(cardBIndex, 1);
-    cardB.className += ` ${color}`;
-    cardB.setAttribute("data-color", color);
-}
+        const cardBIndex = parseInt(Math.random() * cards.length);
+        const cardB = cards[cardBIndex];
+        cards.splice(cardBIndex, 1);
+        cardB.className += ` ${color}`;
+        cardB.setAttribute("data-color", color);
+    }
 }
 
 initCards([...document.querySelectorAll(".card")]);
@@ -46,7 +47,7 @@ function onCardClicked(e) {
     target.className = target.className
         .replace("color-hidden", "")
         .trim();
-        target.className += " done";
+    target.className += " done";
 
     console.log(target.getAttribute("data-color"));
 
@@ -55,37 +56,82 @@ function onCardClicked(e) {
         clickedCard = target;
     } else {
         // if we have already clicked a card, check if the new card matches the old card color
-        if (clickedCard.getAttribute("data-color") !== 
-        target.getAttribute("data-color")
+        if (clickedCard.getAttribute("data-color") !==
+            target.getAttribute("data-color")
         ) {
             preventClick = true;
-            setTimeout(() => {  
+            setTimeout(() => {
                 clickedCard.className =
-                clickedCard.className.replace("done", "").trim() + " color-hidden";
+                    clickedCard.className.replace("done", "").trim() + " color-hidden";
                 target.className =
-                target.className.replace("done", "").trim() + " color-hidden"; 
+                    target.className.replace("done", "").trim() + " color-hidden";
                 clickedCard = null;
                 preventClick = false;
             }, 500);
-        } 
+        }
         else {
             combosFound++;
-        clickedCard = null;
-        if (combosFound === 8) {
-            document.getElementById("winner").innerText= "WELL DONE!";
-            setTimeout (reset, 3000);
-        }
+            clickedCard = null;
+            if (combosFound === 8) {
+                countDownFinish()
+                //document.getElementById("winner").innerText= "WELL DONE!";
+                //setTimeout (reset, 3000);
+            }
         }
     }
 }
 
 
 function reset() {
+    preventClick = false;
+    combosFound = 0;
     var cards = document.querySelectorAll(".card");
-    cards.forEach(function(item, index) {
-    item.className = "card color-hidden"
-    document.getElementById("winner").innerText= "";
+    cards.forEach(function (item, index) {
+        item.className = "card color-hidden"
+        //document.getElementById("winner").innerText= "";
     })
 
     initCards([...document.querySelectorAll(".card")]);
+    document.getElementById("counter").innerHTML = "";
+    document.getElementById("winner").innerText = "";
 };
+
+function countDown(minutes) {
+    countDownTimerEnabled = true;
+    var seconds = 60;
+    var mins = minutes;
+
+    function tick() {
+        if (!countDownTimerEnabled) {
+            preventClick = true;
+            countDownFinish()
+            return;
+        }
+        var counter = document.getElementById("counter");
+        var current_minutes = mins-1
+        seconds--;
+        counter.innerHTML = current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+        if (seconds > 0) {
+            setTimeout(tick, 1000);
+        } else {
+            if (mins > 1) {
+                countDown(mins-1);
+            }
+            else {
+                countDownFinish();
+            }
+        }
+    }
+
+tick();
+}
+
+function countDownFinish() {
+    countDownTimerEnabled = false;
+    if (combosFound != 8) {
+        preventClick = true;
+        document.getElementById("winner").innerText = "GOOD LUCK NEXT TIME!";
+    } else {
+        document.getElementById("winner").innerText = "WELL DONE!";
+    }
+}
