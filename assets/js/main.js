@@ -37,6 +37,9 @@ initCards([...document.querySelectorAll(".card")]);
 
 function onCardClicked(e) {
     const target = e.currentTarget;
+    if (!countDownTimerEnabled) {
+        return;
+    }
 
     if (
         preventClick ||
@@ -83,7 +86,6 @@ function onCardClicked(e) {
 
 
 function reset() {
-    preventClick = false;
     combosFound = 0;
     var cards = document.querySelectorAll(".card");
     cards.forEach(function (item, index) {
@@ -103,7 +105,6 @@ function countDown(minutes) {
 
     function tick() {
         if (!countDownTimerEnabled) {
-            preventClick = true;
             countDownFinish()
             return;
         }
@@ -129,7 +130,6 @@ tick();
 function countDownFinish() {
     countDownTimerEnabled = false;
     if (combosFound != 8) {
-        preventClick = true;
         document.getElementById("winner").innerText = "GOOD LUCK NEXT TIME!";
     } else {
         document.getElementById("winner").innerText = "WELL DONE!";
