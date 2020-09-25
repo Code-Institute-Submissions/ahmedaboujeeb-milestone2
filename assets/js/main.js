@@ -76,7 +76,7 @@ function onCardClicked(e) {
             combosFound++;
             clickedCard = null;
             if (combosFound === 8) {
-                countDownFinish()
+                countDownFinish();
                 //document.getElementById("winner").innerText= "WELL DONE!";
                 //setTimeout (reset, 3000);
             }
@@ -89,14 +89,14 @@ function reset() {
     combosFound = 0;
     var cards = document.querySelectorAll(".card");
     cards.forEach(function (item, index) {
-        item.className = "card color-hidden"
+        item.className = "card color-hidden";
         //document.getElementById("winner").innerText= "";
-    })
+    });
 
     initCards([...document.querySelectorAll(".card")]);
     document.getElementById("counter").innerHTML = "";
     document.getElementById("winner").innerText = "";
-};
+}
 
 function countDown(minutes) {
     countDownTimerEnabled = true;
@@ -105,11 +105,11 @@ function countDown(minutes) {
 
     function tick() {
         if (!countDownTimerEnabled) {
-            countDownFinish()
+            countDownFinish();
             return;
         }
         var counter = document.getElementById("counter");
-        var current_minutes = mins-1
+        var current_minutes = mins-1;
         seconds--;
         counter.innerHTML = current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
         if (seconds > 0) {
