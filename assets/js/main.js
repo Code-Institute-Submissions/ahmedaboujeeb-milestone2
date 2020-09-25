@@ -72,7 +72,7 @@ function onCardClicked(e) {
             combosFound++;
         clickedCard = null;
         if (combosFound === 8) {
-            document.getElementById("winner").innerText= "You Win!";
+            document.getElementById("winner").innerText= "WELL DONE!";
             setTimeout (reset, 3000);
         }
         }
