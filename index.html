@@ -35,7 +35,7 @@
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <ul class="navbar-nav ml-auto mt-2 mt-lg-0 menu">
                                 <li class="nav-item mr-2"><a class="nav-link" href="#letsplay">Play</a></li>
-                                <li class="nav-item mr-2"><a class="nav-link highlight" href="#about">About</a></li>
+                                <li class="nav-item mr-2"><a class="nav-link highlight" href="#information">Information</a></li>
                                 <li class="nav-item mr-2"><a class="nav-link" href="#topplayers">Top Players</a></li>
                             </ul>
                         </div>
@@ -62,38 +62,41 @@
     <section class="game">
         <div class="container">
             <h2 class="heading"> <a id="letsplay"></a>Let's Play!</h2>
-            <div class="row center">
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-            </div>
             <div class="row">
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-            </div>
-            <div class="row">
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                <div class="col-md-6">
+                    <div class="row center">
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                    </div>
+                    <div class="row">
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                    </div>
+                    <div class="row">
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
 
+                    </div>
+                    <div class="row">
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 center">
+                    <p id="winner"></p>
+                    <button onclick="countDown(1)">Start</button>
+                    <div id="counter"></div>
+                    <button onclick="reset()">Reset</button>
+                </div>
             </div>
-            <div class="row">
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-            </div>
-        </div>
-        <div class="col-md-6 center">
-            <p id="winner"></p>
-            <button onclick="countDown(1)">Start</button>
-        <div id="counter"></div>
-        <button onclick="reset()">Reset</button>
-            
         </div>
 
     </section>
@@ -102,43 +105,25 @@
     <!-- About  -->
     <section class="about">
         <div class="container">
-            <h2 class="heading"> <a id="about"></a>About</h2>
+            <h2 class="heading"> <a id="information"></a>Information</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <h3>About The Game</h3>
+                    <h3>About Memory Game</h3>
                     <p>
-                        Concentration, also known as Match Match, Match Up, Memory, Pelmanism, Shinkei-suijaku,
-                        Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface
-                        and
-                        two
-                        cards are flipped face up over each turn.
-                        The object of the game is to turn over pairs of matching cards.
-                        Concentration can be played with any number of players or as a solitaire or patience game.
+                        Memory Game is a very cool and simple game that tests your memory, Memory Game is also known as Match Up.
+                        Memory Game is a card game that consists of 16 cards and 8 colors, each 2 cards have a unique color. 
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <h3>Rules</h3>
-                    <p>
-                        Any deck of playing cards may be used, although there are also commercial sets of cards with
-                        images.
-                        The rules given here are for a standard deck of 52 cards, which are normally laid face down in
-                        four
-                        rows
-                        of
-                        13 cards each.
-                        The two jokers may be included for a total of six rows of nine cards each.
-                        Additional packs can be used for added interest. Standard rules need not be followed: the cards
-                        can
-                        be
-                        spread out anywhere, such as all around a room.
-                        In turn, each player chooses two cards and turns them face up. If they are of the same rank and
-                        color
-                        (e.g.
-                        six of hearts and six of diamonds,
-                        queen of clubs and queen of spades, or both jokers, if used) then that player wins the pair and
-                        plays
-                        again.
-                    </p>
+                    <h3>Instructions</h3>
+                    <ul>
+                        <li>To start playing click the "Start" button.</li> 
+                        <li>Click on a card to see the card color.</li>
+                        <li>Click on another card to find the matching card.</li>
+                        <li>You can only open 2 cards at the same time.</li>
+                        <li>You have 1 minute to match all cards.</li>
+                        <li>When the minute is up, click to "Reset" to start over.</li>
+                    </ul>
                 </div>
             </div>
         </div>
