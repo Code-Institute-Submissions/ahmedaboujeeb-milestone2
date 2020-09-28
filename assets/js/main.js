@@ -77,8 +77,6 @@ function onCardClicked(e) {
             clickedCard = null;
             if (combosFound === 8) {
                 countDownFinish();
-                //document.getElementById("winner").innerText= "WELL DONE!";
-                //setTimeout (reset, 3000);
             }
         }
     }
@@ -90,7 +88,8 @@ function reset() {
     var cards = document.querySelectorAll(".card");
     cards.forEach(function (item, index) {
         item.className = "card color-hidden";
-        //document.getElementById("winner").innerText= "";
+        countDownTimerEnabled = false;
+        enableBtn();
     });
 
     initCards([...document.querySelectorAll(".card")]);
@@ -123,15 +122,23 @@ function countDown(minutes) {
             }
         }
     }
-
+disableBtn();
 tick();
 }
 
 function countDownFinish() {
     countDownTimerEnabled = false;
-    if (combosFound != 8) {
-        document.getElementById("winner").innerText = "GOOD LUCK NEXT TIME!";
+        if (combosFound != 8) {
+        document.getElementById("winner").innerText = "TRY AGAIN!";
     } else {
         document.getElementById("winner").innerText = "WELL DONE!";
     }
-}
+     }
+    
+     function disableBtn() {
+        document.getElementById("btn").disabled = true;
+    }
+    
+    function enableBtn() {
+        document.getElementById("btn").disabled = false;
+    }
