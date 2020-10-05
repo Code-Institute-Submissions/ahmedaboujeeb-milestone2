@@ -4,14 +4,16 @@
 
 ## UX
 
-Link to wireframes
+Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/assets/wireframes/Milestone%202%20WF.pdf) designed by Balsamiq.
 
 #### As a User...
 
 - I want to have fun playing the game.
 - I want to restart the game.
 - I want to learn more about the game.
-- I want to learn how to play the game.
+- I want to learn the rules of the game.
+- I want to find top players.
+- I want to follow Memory Game on social media. 
 
 ## Features
 
@@ -24,7 +26,14 @@ Link to wireframes
 
 ## Technologies Used
 
-
+ - HTML, CSS
+ - JavaScript
+ - Visual Studio Code
+ - Google Maps
+ - Balsamiq
+ - Google fonts
+ - Font awesome
+ - GitHub
 
 
 
@@ -32,6 +41,27 @@ Link to wireframes
 
 ### Game 
 
+ - Click on cards before click start button is not possilbe, cards won't show color.
+ - Reset button doesn't work before click sart button
+ - Click start button starts timer, cards are clickable and show color when clicked.
+ - Start button is disabled if timer is running and game is over. 
+ - Click on card shows card color, click on another card shows card color, if:
+    - Card colors match, cards will show color.
+    - Card colors match, can click on another card immidiatly.
+    - Card colors don't match, cards will hide color. 
+    - Card colors don't match, can't click on another card for 0.5 second. 
+ - If all cards matched and game is complete:
+    - message says "WELL DONE!".
+    - Timer stops.
+    - Cards unclickable.
+    - Start button disabled. 
+    - Click reset button to start a new game. 
+- If time is up and game is not complete:
+    - Message shows "TRY AGAIN!".
+    - Cards unclickable. 
+    - Start button disabled.
+    - Click on reset button to start a new game. 
+- 
 
 
 ### Maps 
@@ -74,7 +104,6 @@ The game breaks on Galaxy Fold.
 
 
 ## Deployment
-
 
 
 
