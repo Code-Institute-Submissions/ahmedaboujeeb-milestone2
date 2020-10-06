@@ -64,17 +64,21 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
     - Cards unclickable.
     - Start button disabled. 
     - Click reset button to start a new game. 
-- If time is up and game is not complete:
+ - If time is up and game is not complete:
     - Message shows "TRY AGAIN!".
     - Cards unclickable. 
     - Start button disabled.
     - Click on reset button to start a new game. 
-- 
+ - 
 
 
 ### Maps 
 
-
+ - Zoom in, Zoom out.
+ - Satellite veiw.
+ - Click on Google logo to go seperate tab. 
+ - Full screen.
+ - Cluster buttons (all 3).
 
 
 ### Responsivity 
@@ -99,10 +103,23 @@ The game breaks on Galaxy Fold.
 
 ### Navbar 
 
+ - Click on Play takes you to the game section.
+ - Click on Information takes you to the information section.
+ - Click on Top Players takes to Google Maps find top players section.
+ - Navbar collaps on mobile screens and some devices with limited width. 
+ - Navbar exapnds when clicked on toggler. 
+
 
 ### Footer Icons
 
-
+ - Hover over the Facebook icon changes icon color. 
+ - Hover over the Twitter icon changes icon color.
+ - Hover over the Instagram icon changes icon color.
+ - Hover over the LinkedIn icon changes icon color.
+ - Click on the Facebook icon opens link in a new tab. 
+ - Click on the Twitter icon opens link in a new tab.
+ - Click on the Instagram icon opens link in a new tab.
+ - Click on the LinkedIn icon opens link in a new tab.
 
 ### Programming Language Validation
 
