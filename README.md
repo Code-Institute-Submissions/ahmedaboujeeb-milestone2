@@ -27,13 +27,21 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
 ## Technologies Used
 
  - HTML, CSS
+   - Used for the main website structure and styleying.
  - JavaScript
+   - The game and Google Maps were designed using JavaScript.
  - Visual Studio Code
+   - This whlo project is done using VS Code.
  - Google Maps
+   - The map was taken from https://developers.google.com/maps/documentation/javascript/marker-clustering using JavaScript API.
  - Balsamiq
+   - Wireframes were created using Balasmaiq.
  - Google fonts
+   - The fonts were taken from fonts.google.com
  - Font awesome
+   - Social media icons were taken from fontawesome.com 
  - GitHub
+   - Used to host the whole project. 
 
 
 
@@ -42,13 +50,13 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
 ### Game 
 
  - Click on cards before click start button is not possilbe, cards won't show color.
- - Reset button doesn't work before click sart button
+ - Reset button doesn't work before click start button.
  - Click start button starts timer, cards are clickable and show color when clicked.
  - Start button is disabled if timer is running and game is over. 
  - Click on card shows card color, click on another card shows card color, if:
-    - Card colors match, cards will show color.
+    - Card colors match, both cards will show color until restart.
     - Card colors match, can click on another card immidiatly.
-    - Card colors don't match, cards will hide color. 
+    - Card colors don't match, both cards will hide color. 
     - Card colors don't match, can't click on another card for 0.5 second. 
  - If all cards matched and game is complete:
     - message says "WELL DONE!".
