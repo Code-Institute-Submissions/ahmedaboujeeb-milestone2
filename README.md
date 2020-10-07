@@ -19,9 +19,16 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
 
 ### Existing Features
 
+ - Navbar: allows you to navigate around the webpage and move to the section you want. It also collapses on small devices e.g mobile. 
+ - Game
+   - Start button: click the button to start the timer and be able to click on the cards.
+   - Reser button: click to restart the timer and hide and shuffle all cards.
+   - Clickable cards that show color when clicked. 
+- Google maps: 
+
 ### Future Features
 
-
+ - Score counter: it counts your score how many times you've and lost.
 
 
 ## Technologies Used
@@ -29,11 +36,11 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
  - HTML, CSS
    - Used for the main website structure and styleying.
  - JavaScript
-   - The game and Google Maps were designed using JavaScript.
+   - The game was designed using JavaScript.
  - Visual Studio Code
-   - This whlo project is done using VS Code.
+   - This whole project is done using VS Code.
  - Google Maps
-   - The map was taken from https://developers.google.com/maps/documentation/javascript/marker-clustering using JavaScript API.
+   - The map (JavaScript code) was taken from https://developers.google.com/maps/documentation/javascript/marker-clustering and connected to Google maps using JavaScript API.
  - Balsamiq
    - Wireframes were created using Balasmaiq.
  - Google fonts
@@ -116,10 +123,10 @@ The game breaks on Galaxy Fold.
  - Hover over the Twitter icon changes icon color.
  - Hover over the Instagram icon changes icon color.
  - Hover over the LinkedIn icon changes icon color.
- - Click on the Facebook icon opens link in a new tab. 
- - Click on the Twitter icon opens link in a new tab.
- - Click on the Instagram icon opens link in a new tab.
- - Click on the LinkedIn icon opens link in a new tab.
+ - Click on the Facebook icon, link opens in a new tab. 
+ - Click on the Twitter icon, link opens in a new tab.
+ - Click on the Instagram icon, link opens in a new tab.
+ - Click on the LinkedIn icon, link opens in a new tab.
 
 ### Programming Language Validation
 
@@ -130,8 +137,26 @@ The game breaks on Galaxy Fold.
 
 ## Deployment
 
+### Deployed Vesrion
+
+The whole project is hosted on GitHub 
+
+
+### Development Version
 
 
 
 
 ## Credits
+
+ ### Acknowledgment 
+
+  - The game was inspired by Web Dev Junkie Youtube channel. 
+  - Google Maps were taken from developres.google.com
+
+ ### Media
+
+  - Hero image was taken from pexels.com
+  - Social media icons were taken from fontawesome.com
+  - Color coordination taken from coolors.co
+  - Font taken from fonts.google.com
