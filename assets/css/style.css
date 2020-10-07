@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter:wght@100;200;300;400;500;600;700&display=swap');
 
+/* --------- General --------- */
+
 body {
+    background-color: #f8f7ff;
     font-family: "Architects Daughter", sans-serif;
+}
+
+.heading {
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 4rem;
+    font-weight: 600;
+    color: #ef476f;
 }
 
 /* ----- Header ----- */
 .logo {
     font-weight: 700;
     font-size: 3rem;
-    color: #133c55;
+    color: #0466c8;
     text-decoration: none;
     width: 100%;
     float: left;
@@ -140,6 +151,23 @@ body {
     padding-top: 3rem;
 }
 
+.button {
+    padding: .5rem 2rem;
+    color: #59a5d8;
+    background-color: #f8f7ff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-color: #59a5d8;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.button:hover {
+    background-color: #59a5d8;
+    color: #f8f7ff;
+    font-size: 1.5rem;
+}
+
 /* --------- About --------- */
 
 .about {
@@ -187,17 +215,5 @@ body {
     color: #133c55;
 }
 
-/* --------- General --------- */
 
-body {
-    background-color: #f8f7ff;
-}
-
-.heading {
-    text-transform: uppercase;
-    text-align: left;
-    padding-bottom: 4rem;
-    font-weight: 600;
-    color: #133c55;
-}
 
