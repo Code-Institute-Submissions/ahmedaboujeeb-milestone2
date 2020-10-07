@@ -2,7 +2,7 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 3,
-      center: {lat: -28.024, lng: 140.887}
+      center: {lat: 45.184758, lng: -3.549559}
     });
 
   
@@ -21,7 +21,8 @@ function initMap() {
         {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
   }
   var locations = [
-    {lat: -31.563910, lng: 147.154312},
-    {lat: -33.718234, lng: 150.363181},
-    {lat: -33.727111, lng: 150.371124},
+    {lat: 51.527556, lng: -0.197480},
+    {lat: 40.757841, lng: -73.979462},
+    {lat: 53.369132, lng: -6.269468},
+    {lat: 47.990406, lng: 0.213298},
   ]

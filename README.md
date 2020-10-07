@@ -22,7 +22,7 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
  - Navbar: allows you to navigate around the webpage and move to the section you want. It also collapses on small devices e.g mobile. 
  - Game
    - Start button: click the button to start the timer and be able to click on the cards.
-   - Reser button: click to restart the timer and hide and shuffle all cards.
+   - Reset button: click to restart the timer and hide and shuffle all cards.
    - Clickable cards that show color when clicked. 
 - Google maps: 
 
