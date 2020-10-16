@@ -17,7 +17,7 @@ body {
 
 /* ----- Header ----- */
 .logo {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 3rem;
     color: #0466c8;
     text-decoration: none;
@@ -63,13 +63,17 @@ body {
     text-transform: uppercase;
 }
 
+.no-gutters {
+    padding-top: 1rem;
+}
+
 /* --------- Hero Image --------- */
 
 .hero-image {
     background: url("../images/hero-image.jpg") no-repeat;
     position: relative;
     background-size: cover;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     left: 0;
     top: 0;
