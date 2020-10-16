@@ -28,7 +28,7 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
 
 ### Future Features
 
- - Score counter: it counts your score how many times you've and lost.
+ - Score counter: to keep score of your game. 
 
 
 ## Technologies Used
@@ -134,17 +134,32 @@ The game breaks on Galaxy Fold.
  - CSS passed the w3schools vaildation jigsaw.w3.org without any erros.
  - JavaScript passed the jshint.com validation without any errors. 
 
+### Bugs
+
+  - Fixed:
+    - Start button could be clicked again while timer is running, which starts a new timer over the running one. 
+    - The game was functional before without clicking the start button.
+    - The game was still finctional after clicking the reset button.
+
+  - To be fixed:
+    - When click the reset button, the "TRY AGAIN!" message disapears. 
+
 
 ## Deployment
 
 ### Deployed Vesrion
 
-The whole project is hosted on GitHub 
+The project is hosted on GitHub in a repository calles [milestone2](https://github.com/ahmedaboujeeb/milestone2), and was developed using VS Code where the code uploaded to GitHub using clear commit messages. The live website is hosted on GitGub Pages, the deployement process is as follow:
 
+  - Login to GitHub.
+  - Go to repository ahmedaboujeeb/milestone2.
+  - Click on settings.
+  - Scroll down to GitHub Pages - source - select branch - save.
+  - The site is now published at https://ahmedaboujeeb.github.io/milestone2/
 
 ### Development Version
 
-
+The development vesrion was developed on VS Code, and stored locally in a hard drive. The development version is identical to the version, and uploaded using clear commits. 
 
 
 ## Credits
