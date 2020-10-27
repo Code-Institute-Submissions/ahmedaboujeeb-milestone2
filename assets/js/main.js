@@ -1,10 +1,10 @@
+// Identify variables
 let clickedCard = null;
 let preventClick = false;
 let combosFound = 0;
-
-
 let countDownTimerEnabled = false;
 
+// Identify colors
 const colors = [
     "pink",
     "red",
@@ -16,6 +16,7 @@ const colors = [
     "blue"
 ];
 
+// Shuffle card colors
 function initCards(cards) {
 
     for (let color of colors) {
@@ -52,13 +53,9 @@ function onCardClicked(e) {
         .trim();
     target.className += " done";
 
-    console.log(target.getAttribute("data-color"));
-
     if (!clickedCard) {
-        // if we haven't clicked a card, keep track of the card, display it's color
         clickedCard = target;
     } else {
-        // if we have already clicked a card, check if the new card matches the old card color
         if (clickedCard.getAttribute("data-color") !==
             target.getAttribute("data-color")
         ) {
@@ -82,7 +79,7 @@ function onCardClicked(e) {
     }
 }
 
-
+// Reset the game
 function reset() {
     combosFound = 0;
     var cards = document.querySelectorAll(".card");
@@ -108,37 +105,38 @@ function countDown(minutes) {
             return;
         }
         var counter = document.getElementById("counter");
-        var current_minutes = mins-1;
+        var current_minutes = mins - 1;
         seconds--;
         counter.innerHTML = current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
         if (seconds > 0) {
             setTimeout(tick, 1000);
         } else {
             if (mins > 1) {
-                countDown(mins-1);
+                countDown(mins - 1);
             }
             else {
                 countDownFinish();
             }
         }
     }
-disableBtn();
-tick();
+    disableBtn();
+    tick();
 }
 
+// time is up or timer stops
 function countDownFinish() {
     countDownTimerEnabled = false;
-        if (combosFound != 8) {
+    if (combosFound != 8) {
         document.getElementById("winner").innerText = "TRY AGAIN!";
     } else {
         document.getElementById("winner").innerText = "WELL DONE!";
     }
-     }
-    
-     function disableBtn() {
-        document.getElementById("btn").disabled = true;
-    }
-    
-    function enableBtn() {
-        document.getElementById("btn").disabled = false;
-    }
+}
+// Disable and enable start button
+function disableBtn() {
+    document.getElementById("btn").disabled = true;
+}
+
+function enableBtn() {
+    document.getElementById("btn").disabled = false;
+}

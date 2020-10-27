@@ -1,30 +1,35 @@
 # Memory Game
 
-[Memory Game](https://ahmedaboujeeb.github.io/milestone2/) is a very cool and simple game that tests your memory, Memory Game is also known as Match Up. Memory Game is a card game that consists of 16 cards and 8 colors, each 2 cards have a unique color.
+[Memory Game](https://ahmedaboujeeb.github.io/milestone2/) is a very cool and simple game that tests your memory, its is also known as Match Up. Memory Game is a card game that consists of 16 cards and 8 colors, each 2 cards have a unique color and your job is to remember where they are and match them. Cards will be shuffled ever new game, so it's a new challenge vereytime.
 
 ## UX
 
-Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/assets/wireframes/Milestone%202%20WF.pdf) designed by Balsamiq.
+Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/assets/wireframes/Milestone%202%20WF.pdf) designed with Balsamiq.
 
 #### As a User...
 
 - I want to have fun playing the game.
 - I want to restart the game.
+- I want to navigate through the website.
 - I want to learn more about the game.
 - I want to learn the rules of the game.
-- I want to find top players.
+- I want to find top players on the map.
 - I want to follow Memory Game on social media. 
 
 ## Features
 
 ### Existing Features
 
- - Navbar: allows you to navigate around the webpage and move to the section you want. It also collapses on small devices e.g mobile. 
+ - Navbar: allows you to navigate around the webpage and move to the section you want. It also collapses on small devices e.g mobile and tuen into a toggle that you can click on to expand.
  - Game
-   - Start button: click the button to start the timer and be able to click on the cards.
-   - Reset button: click to restart the timer and hide and shuffle all cards.
+   - Start button: click the button to start the timer and be able to click on the cards, and play the game.
+   - Reset button: click to restart the timer, hide and shuffle all cards.
    - Clickable cards that show color when clicked. 
 - Google maps: 
+   - Allows you to find where the top players are located on a map.
+   - Have a cluster button.
+   - Zoom in and zoom out buttons.
+   - Navigate and move the maps around.
 
 ### Future Features
 
@@ -34,7 +39,7 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
 ## Technologies Used
 
  - HTML, CSS
-   - Used for the main website structure and styleying.
+   - Used for the main website structure and styling.
  - JavaScript
    - The game was designed using JavaScript.
  - Visual Studio Code
@@ -59,7 +64,7 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
  - Click on cards before click start button is not possilbe, cards won't show color.
  - Reset button doesn't work before click start button.
  - Click start button starts timer, cards are clickable and show color when clicked.
- - Start button is disabled if timer is running and game is over. 
+ - Start button is disabled if timer is running or if game is over. 
  - Click on card shows card color, click on another card shows card color, if:
     - Card colors match, both cards will show color until restart.
     - Card colors match, can click on another card immidiatly.
@@ -76,16 +81,16 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
     - Cards unclickable. 
     - Start button disabled.
     - Click on reset button to start a new game. 
- - 
 
 
 ### Maps 
 
  - Zoom in, Zoom out.
  - Satellite veiw.
- - Click on Google logo to go seperate tab. 
+ - Click on Google logo to open Google maps in a new tab. 
  - Full screen.
  - Cluster buttons (all 3).
+ - Navigate and move the map around.
 
 
 ### Responsivity 
@@ -142,14 +147,14 @@ The game breaks on Galaxy Fold.
     - The game was still finctional after clicking the reset button.
 
   - To be fixed:
-    - When click the reset button, the "TRY AGAIN!" message disapears. 
+    - When the reset button clicked while timer is running, the "TRY AGAIN!" message doesn't disapear. 
 
 
 ## Deployment
 
 ### Deployed Vesrion
 
-The project is hosted on GitHub in a repository calles [milestone2](https://github.com/ahmedaboujeeb/milestone2), and was developed using VS Code where the code uploaded to GitHub using clear commit messages. The live website is hosted on GitGub Pages, the deployement process is as follow:
+The project is hosted on GitHub in a repository called [milestone2](https://github.com/ahmedaboujeeb/milestone2), and was developed using VS Code where the code was uploaded to GitHub using clear commit messages. The live website is hosted on GitGub Pages, the deployement process is as follows:
 
   - Login to GitHub.
   - Go to repository ahmedaboujeeb/milestone2.
@@ -159,7 +164,7 @@ The project is hosted on GitHub in a repository calles [milestone2](https://gith
 
 ### Development Version
 
-The development vesrion was developed on VS Code, and stored locally in a hard drive. The development version is identical to the version, and uploaded using clear commits. 
+The development vesrion was developed on VS Code, and stored locally on a hard drive. The development version is identical to the live version, and uploaded using clear commits. 
 
 
 ## Credits
