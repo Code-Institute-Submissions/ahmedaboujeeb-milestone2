@@ -157,7 +157,13 @@ The webiste was tested on the following browsers:
 
 ### Deployed Vesrion
 
-The project is hosted on GitHub in a repository called [milestone2](https://github.com/ahmedaboujeeb/milestone2), and was developed using VS Code where the code was uploaded to GitHub on the master branch using clear commit messages. The live website is hosted on GitGub Pages, the deployement process is as follows:
+The project is hosted on GitHub in a repository called [milestone2](https://github.com/ahmedaboujeeb/milestone2), and was developed using VS Code where the code was uploaded to GitHub on the master branch using clear commit messages. Here are the command messages used:
+
+ - Git add
+ - Git commit -m ""
+ - Git push
+
+The live website is hosted on GitGub Pages, the deployement process is as follows:
 
   - Login to GitHub.
   - Go to repository ahmedaboujeeb/milestone2.
