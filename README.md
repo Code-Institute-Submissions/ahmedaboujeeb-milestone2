@@ -6,15 +6,23 @@
 
 Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/assets/wireframes/Milestone%202%20WF.pdf) designed with Balsamiq.
 
-#### As a User...
+### User story
 
-- I want to have fun playing the game.
-- I want to restart the game.
-- I want to navigate through the website.
-- I want to learn more about the game.
-- I want to learn the rules of the game.
-- I want to find top players on the map.
-- I want to follow Memory Game on social media. 
+#### As a new user
+
+- Have fun playing the game.
+- Restart the game.
+- Navigate through the website.
+- Learn more about the game.
+- Learn the rules of the game.
+- Find top players on the map.
+- Follow Memory Game on social media. 
+
+#### As a returning user
+
+- Beat your old recored.
+- Get better at the game.
+- Become one of the top players.
 
 ## Features
 
@@ -180,7 +188,7 @@ The development vesrion was developed on VS Code, and stored locally on a hard d
 
  ### Acknowledgment 
 
-  - The game was inspired and a part of the code was learned from Web Dev Junkie. 
+  - The game was inspired by and a part of the code was learned from Web Dev Junkie. 
   - Google Maps were taken from developres.google.com
 
  ### Media
