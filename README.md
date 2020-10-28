@@ -111,7 +111,9 @@ The website was tested using Google Chrome developer tools, and is responsive on
 
 The game breaks on Galaxy Fold. 
 
-
+The webiste was tested on the following browsers:
+ - Google Chrome
+ - Safari
 
 ### Navbar 
 
@@ -142,9 +144,10 @@ The game breaks on Galaxy Fold.
 ### Bugs
 
   - Fixed:
-    - Start button could be clicked again while timer is running, which starts a new timer over the running one. 
-    - The game was functional before without clicking the start button.
-    - The game was still finctional after clicking the reset button.
+    - Game breaks on mobile devices.
+    - Start button can be clicked again while timer is running, which starts a new timer over the running one. 
+    - The game is functional without clicking the start button.
+    - The game is still finctional after clicking the reset button.
 
   - To be fixed:
     - When the reset button clicked while timer is running, the "TRY AGAIN!" message doesn't disapear. 
@@ -154,7 +157,7 @@ The game breaks on Galaxy Fold.
 
 ### Deployed Vesrion
 
-The project is hosted on GitHub in a repository called [milestone2](https://github.com/ahmedaboujeeb/milestone2), and was developed using VS Code where the code was uploaded to GitHub using clear commit messages. The live website is hosted on GitGub Pages, the deployement process is as follows:
+The project is hosted on GitHub in a repository called [milestone2](https://github.com/ahmedaboujeeb/milestone2), and was developed using VS Code where the code was uploaded to GitHub on the master branch using clear commit messages. The live website is hosted on GitGub Pages, the deployement process is as follows:
 
   - Login to GitHub.
   - Go to repository ahmedaboujeeb/milestone2.
@@ -164,14 +167,14 @@ The project is hosted on GitHub in a repository called [milestone2](https://gith
 
 ### Development Version
 
-The development vesrion was developed on VS Code, and stored locally on a hard drive. The development version is identical to the live version, and uploaded using clear commits. 
+The development vesrion was developed on VS Code, and stored locally on a hard drive. The development version is identical to the live version, and uploaded using clear commits.
 
 
 ## Credits
 
  ### Acknowledgment 
 
-  - The game was inspired by Web Dev Junkie Youtube channel. 
+  - The game was inspired and a part of the code was learned from Web Dev Junkie. 
   - Google Maps were taken from developres.google.com
 
  ### Media
