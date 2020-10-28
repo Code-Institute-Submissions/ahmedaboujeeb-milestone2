@@ -16,7 +16,7 @@ const colors = [
     "blue"
 ];
 
-// Shuffle card colors
+// Pick random cards
 function initCards(cards) {
 
     for (let color of colors) {
@@ -36,12 +36,12 @@ function initCards(cards) {
 
 initCards([...document.querySelectorAll(".card")]);
 
+// Can click cards when timer starts
 function onCardClicked(e) {
     const target = e.currentTarget;
     if (!countDownTimerEnabled) {
         return;
-    }
-
+    } 
     if (
         preventClick ||
         target === clickedCard ||
@@ -56,6 +56,7 @@ function onCardClicked(e) {
     if (!clickedCard) {
         clickedCard = target;
     } else {
+        // If cards don't match hide and prevent click
         if (clickedCard.getAttribute("data-color") !==
             target.getAttribute("data-color")
         ) {
@@ -93,7 +94,7 @@ function reset() {
     document.getElementById("counter").innerHTML = "";
     document.getElementById("winner").innerText = "";
 }
-
+// Timer
 function countDown(minutes) {
     countDownTimerEnabled = true;
     var seconds = 60;
