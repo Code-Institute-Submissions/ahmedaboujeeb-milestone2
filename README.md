@@ -1,6 +1,6 @@
 # Memory Game
 
-[Memory Game](https://ahmedaboujeeb.github.io/milestone2/) is a very cool and simple game that tests your memory, its is also known as Match Up. Memory Game is a card game that consists of 16 cards and 8 colors, each 2 cards have a unique color and your job is to remember where they are and match them. Cards will be shuffled ever new game, so it's a new challenge vereytime.
+[Memory Game](https://ahmedaboujeeb.github.io/milestone2/) is a very cool and simple game that tests your memory, it's is also known as Match Up. Memory Game is a card game that consists of 16 cards and 8 colors, each 2 cards have a unique color and your job is to remember where they are and match them. Cards will be shuffled every new game, so it's a new challenge everytime.
 
 ## UX
 
@@ -101,7 +101,7 @@ Link to [wireframes](https://github.com/ahmedaboujeeb/milestone2/blob/master/ass
  - Navigate and move the map around.
 
 
-### Responsivity 
+### Responsiveness
 
 The website was tested using Google Chrome developer tools, and is responsive on the following devices:
 
@@ -188,7 +188,7 @@ The development vesrion was developed on VS Code, and stored locally on a hard d
 
  ### Acknowledgment 
 
-  - The game was inspired by and a part of the code was learned from Web Dev Junkie. 
+  - The game was inspired by and part of the code was learned from Web Dev Junkie. 
   - Google Maps were taken from developres.google.com
 
  ### Media
